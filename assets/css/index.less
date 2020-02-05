@@ -1,0 +1,342 @@
+// Is this working?
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+	font-family: 'Special Elite', cursive;
+}
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+	width: 1560px;
+	height: 100vh;
+
+	@media (max-width: 800px){
+		width:100%;
+		padding: 2rem;
+	}
+
+	@media (max-width: 500px) {
+		width: 100%;
+		padding: 0.5rem;
+	} 
+
+}
+
+// My CSS
+
+// .bg {
+//   position: fixed; 
+//   top: -50%; 
+//   left: -50%; 
+//   width: 200%; 
+//   height: 200%;
+// }
+
+// .bg img {
+//   position: absolute; 
+//   top: 0; 
+//   left: 0; 
+//   right: 0; 
+//   bottom: 0; 
+//   margin: auto; 
+//   min-width: 50%;
+//   min-height: 50%;
+// }
+
+
+
+@baseColor: black;
+@altColor: white;
+
+.bordered {
+	border: 1px solid @baseColor;
+}
+
+.heading {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	font-weight: bold;
+	margin: 1rem;
+	
+	nav {
+		width: 50%;
+
+		@media (max-width: 500px) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 100%;
+			margin: 0.1rem;
+		}
+
+	}
+
+	
+
+	ul{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		position: fixed;
+		margin: 1rem;
+		width: 100%;
+
+		@media (max-width: 500px) {
+			position: static;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 100%;
+			margin: 0.1rem;
+		}
+
+		a {
+			font-size: 1.5rem;
+			font-weight: bold;
+			text-decoration: none;
+			width: 2rem;
+			margin: 2rem;
+			background-color: @baseColor;
+			color: @altColor;
+			border: .3rem solid @altColor;
+			border-radius: 2rem;
+			margin: 1rem;
+			padding: 1rem;
+		
+			@media (max-width: 500px) {
+				display: flex;
+				justify-content: center;
+				margin: 0.1rem;
+				width: 100%;
+			}
+		
+			
+			
+		} // close a
+	}	// close ul
+}	// close .heading
+
+li a:hover {
+	background-color: @altColor;
+	color: @baseColor;
+	border: .3rem solid @baseColor;
+}
+
+.info {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	text-align: justify;
+	color: @altColor;
+	
+	div {
+		margin: 1rem;
+		width: 45%;
+		color: @baseColor;
+	}
+
+	.about {
+		.bordered();
+		margin: 1rem;
+	}
+
+	.goals {
+		.bordered();
+		margin: 1rem;
+	}
+}
+
+.experience {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	text-align: justify;
+	
+	div {
+		margin: 1rem;
+		width: 45%;
+		text-align: space-evenly;
+	}
+
+	.MMS {
+		.bordered();
+		margin: 1rem;
+
+		@media (max-width:500px) {
+		margin: .5rem;
+		}
+
+	}
+
+	.APD {
+		.bordered();
+		margin: 1rem;
+
+		@media (max-width:500px) {
+		margin: .5rem;
+		}
+	}
+
+	.TDOC {
+		.bordered();
+		margin: 1rem;
+
+		@media (max-width:500px) {
+		margin: .5rem;
+		}
+	}
+
+	.WNC {
+		.bordered();
+		margin: 1rem;
+
+		@media (max-width:500px) {
+		margin: .5rem;
+		}
+	}
+
+	.AHS {
+		.bordered();
+		margin: 1rem;
+
+		@media (max-width:500px) {
+		margin: .5rem;
+		}
+	}
+
+	.NHC {
+		.bordered();
+		margin: 1rem;
+
+		@media (max-width:500px) {
+		margin: .5rem;
+		}
+	}
+
+	.URMC {
+		.bordered();
+		margin: 1rem;
+
+		@media (max-width:500px) {
+		margin: .5rem;
+		}
+	}
+
+	.CNA {
+		.bordered();
+		margin: 1rem;
+
+		@media (max-width:500px) {
+		margin: .5rem;
+		} //close @media
+	} //close .CNA
+} // close .experience
+
+.education {
+	width: 100%;
+	display: flex;
+	text-align: justify;
+	
+	div {
+		display: flex;
+		flex-direction: column;
+		margin: 1rem;
+		width: 45%;
+	}
+
+	.LS {
+		.bordered();
+		margin: 1rem;
+	}
+
+	.TTC {
+		.bordered();
+		margin: 1rem;
+	}
+
+} // .education
+
+h1 {
+	font-size: 5rem;
+	margin: 5rem 1rem 2rem 1rem;
+	text-align: center;
+	}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: 1rem;
+	}
+
+h3 {
+	font-size: 1rem;
+	font-weight: bold;
+	margin: 1rem;
+	}
+
+.contacts {
+	
+	h2 {
+	width: 50%;
+	text-align: justify;
+	font-size: 1.5rem;
+	font-weight: bold;
+	}
+
+	li {
+		margin: 1rem;
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+}
