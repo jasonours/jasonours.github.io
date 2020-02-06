@@ -1,0 +1,369 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  font-family: 'Special Elite', cursive;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 1560px;
+  height: 100vh;
+}
+@media (max-width: 800px) {
+  html,
+  body {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  html,
+  body {
+    width: 100%;
+    padding: 0.5rem;
+  }
+}
+.bordered {
+  border: 1px solid black;
+}
+.heading {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  margin: 1rem;
+}
+.heading nav {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .heading nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0.1rem;
+  }
+}
+.heading ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: fixed;
+  margin: 1rem;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .heading ul {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0.1rem;
+  }
+}
+.heading ul a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  width: 2rem;
+  margin: 2rem;
+  background-color: black;
+  color: white;
+  border: 0.3rem solid white;
+  border-radius: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+@media (max-width: 500px) {
+  .heading ul a {
+    display: flex;
+    justify-content: center;
+    margin: 0.1rem;
+    width: 100%;
+  }
+}
+li a:hover {
+  background-color: white;
+  color: black;
+  border: 0.3rem solid black;
+}
+.info {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  text-align: justify;
+  color: white;
+}
+.info div {
+  margin: 1rem;
+  width: 45%;
+  color: black;
+}
+.info .about {
+  border: 1px solid black;
+  margin: 1rem;
+}
+.info .goals {
+  border: 1px solid black;
+  margin: 1rem;
+}
+.experience {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+.experience div {
+  margin: 1rem;
+  width: 45%;
+  text-align: space-evenly;
+}
+.experience .MMS {
+  border: 1px solid black;
+  margin: 1rem;
+}
+@media (max-width: 500px) {
+  .experience .MMS {
+    margin: 0.5rem;
+  }
+}
+.experience .APD {
+  border: 1px solid black;
+  margin: 1rem;
+}
+@media (max-width: 500px) {
+  .experience .APD {
+    margin: 0.5rem;
+  }
+}
+.experience .TDOC {
+  border: 1px solid black;
+  margin: 1rem;
+}
+@media (max-width: 500px) {
+  .experience .TDOC {
+    margin: 0.5rem;
+  }
+}
+.experience .WNC {
+  border: 1px solid black;
+  margin: 1rem;
+}
+@media (max-width: 500px) {
+  .experience .WNC {
+    margin: 0.5rem;
+  }
+}
+.experience .AHS {
+  border: 1px solid black;
+  margin: 1rem;
+}
+@media (max-width: 500px) {
+  .experience .AHS {
+    margin: 0.5rem;
+  }
+}
+.experience .NHC {
+  border: 1px solid black;
+  margin: 1rem;
+}
+@media (max-width: 500px) {
+  .experience .NHC {
+    margin: 0.5rem;
+  }
+}
+.experience .URMC {
+  border: 1px solid black;
+  margin: 1rem;
+}
+@media (max-width: 500px) {
+  .experience .URMC {
+    margin: 0.5rem;
+  }
+}
+.experience .CNA {
+  border: 1px solid black;
+  margin: 1rem;
+}
+@media (max-width: 500px) {
+  .experience .CNA {
+    margin: 0.5rem;
+  }
+}
+.education {
+  width: 100%;
+  display: flex;
+  text-align: justify;
+}
+.education div {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  width: 45%;
+}
+.education .LS {
+  border: 1px solid black;
+  margin: 1rem;
+}
+.education .TTC {
+  border: 1px solid black;
+  margin: 1rem;
+}
+h1 {
+  font-size: 5rem;
+  margin: 5rem 1rem 2rem 1rem;
+  text-align: center;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+.contacts h2 {
+  width: 50%;
+  text-align: justify;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.contacts li {
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
