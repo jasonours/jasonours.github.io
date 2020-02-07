@@ -225,6 +225,12 @@ li a:hover {
   text-align: justify;
   color: white;
 }
+@media (max-width: 500px) {
+  .info {
+    width: 200%;
+    flex-direction: column;
+  }
+}
 .info div {
   margin: 1rem;
   width: 45%;
@@ -244,6 +250,12 @@ li a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   text-align: justify;
+}
+@media (max-width: 500px) {
+  .experience {
+    width: 200%;
+    flex-direction: column;
+  }
 }
 .experience div {
   margin: 1rem;
@@ -326,6 +338,12 @@ li a:hover {
   width: 100%;
   display: flex;
   text-align: justify;
+}
+@media (max-width: 500px) {
+  .education {
+    width: 200%;
+    flex-direction: column;
+  }
 }
 .education div {
   display: flex;
